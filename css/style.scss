@@ -1,0 +1,223 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+#myfnav {
+  position: sticky;
+  top: 0;
+  left: 0;
+  height: 100px;
+  width: 100%;
+  background: black;
+  opacity: 0.95;
+  z-index: 564848464844494648487485454894658648456787;
+  left: 0;
+  .logo {
+    position: absolute;
+    font-size: 3.4rem;
+    line-height: 100px;
+    left: 50px;
+    font-family: "Black Ops One", cursive;
+    color: #3498db;
+    pointer-events: none;
+  }
+  .show,
+  .hide {
+    position: absolute;
+    display: none;
+    right: 50px;
+    color: white;
+    font-size: 2rem;
+    top: 50px;
+    transform: translateY(-50%);
+    cursor: pointer;
+    transition: 0.4s;
+  }
+  .hide {
+    opacity: 0;
+    pointer-events: none;
+  }
+  #mobile-nav {
+    position: absolute;
+    display: none;
+    background: black;
+    height: 0;
+    overflow: hidden;
+    ul {
+      li {
+        padding: 5px 10px;
+        list-style: none;
+        a {
+          color: #eeefff;
+          text-decoration: none;
+          transition: 0.2s;
+          &:hover {
+            color: #3498db;
+          }
+        }
+      }
+    }
+  }
+  #com-nav {
+    position: absolute;
+    right: 50px;
+    line-height: 100px;
+    ul {
+      li {
+        position: relative;
+        display: inline-block;
+        padding: 0 17px;
+        font-size: 1.3rem;
+        a {
+          position: relative;
+          color: #bdc3c7;
+          text-decoration: none;
+          font-family: "Quicksand", sans-serif;
+          padding: 7px 0;
+          transition: 0.4s;
+          &:hover {
+            color: white;
+          }
+          &::after {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            background: white;
+            width: 0%;
+            height: 2px;
+            left: 50%;
+            transition: 0.3s;
+          }
+          &:hover::after {
+            width: 100%;
+            left: 0;
+          }
+        }
+      }
+    }
+  }
+}
+#home {
+  #banner {
+    margin-top: -100px;
+    height: 100vh;
+    overflow: hidden;
+  }
+  .title {
+    h1 {
+      position: absolute;
+      top: 30vh;
+      left: 50%;
+      transform: translateX(-50%);
+      white-space: nowrap;
+      font-size: 3.6rem;
+      font-family: "Rye", cursive;
+      font-weight: lighter;
+      display: block;
+    }
+    #typing {
+      background: white;
+      padding: 15px;
+      //   border-radius: 10px;
+      position: absolute;
+      top: 50vh;
+      left: 50%;
+      transform: translateX(-50%);
+      font-size: 2.5rem;
+      opacity: 0.8;
+      .still-text {
+        white-space: nowrap;
+      }
+      .typed-text {
+        color: #3498db;
+      }
+      .typed-cursor {
+        color: #3498db;
+      }
+    }
+  }
+}
+.heading {
+  font-family: "Righteous", cursive;
+}
+#team {
+  margin-top: 100px;
+  .card {
+    cursor: pointer;
+  }
+}
+#contact {
+  .icon {
+    padding: 7px;
+    background: black;
+    color: white;
+  }
+  #personal-profile {
+    box-shadow: 0px 0px 25px 10px rgba(0, 0, 0, 0.2);
+    padding: 5px;
+    h4 {
+      font-family: "Comfortaa", cursive;
+    }
+  }
+}
+footer {
+  margin-top: 20px;
+  .icon-foot {
+    color: white;
+    border-radius: 50%;
+    transition: 0.2s;
+  }
+  #fbic:hover {
+    color: #3b5998;
+  }
+  #twic:hover {
+    color: #00acee;
+  }
+  #gplusic:hover {
+    color: #db4a39;
+  }
+  #liic:hover {
+    color: #0e76a8;
+  }
+  #insic:hover {
+    color: #e1306c;
+  }
+  #pinic:hover {
+    color: #e60023;
+  }
+  .footer-link {
+    transition: 0.3;
+    &:hover {
+      text-decoration: none;
+    }
+  }
+}
+@media (max-width: 920px) {
+  #myfnav {
+    #com-nav {
+      right: 20px;
+    }
+  }
+}
+@media (max-width: 880px) {
+  #myfnav {
+    #com-nav {
+      display: none;
+    }
+    #mobile-nav {
+      position: absolute;
+      display: inline-block;
+      top: 100px;
+      right: 50px;
+      transition: 0.4s;
+    }
+    .show,
+    .hide {
+      display: block;
+    }
+  }
+}

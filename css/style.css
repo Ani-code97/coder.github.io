@@ -1,0 +1,261 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+#myfnav {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  left: 0;
+  height: 100px;
+  width: 100%;
+  background: black;
+  opacity: 0.95;
+  z-index: 564848464844494648487485454894658648456787;
+  left: 0;
+}
+
+#myfnav .logo {
+  position: absolute;
+  font-size: 3.4rem;
+  line-height: 100px;
+  left: 50px;
+  font-family: "Black Ops One", cursive;
+  color: #3498db;
+  pointer-events: none;
+}
+
+#myfnav .show,
+#myfnav .hide {
+  position: absolute;
+  display: none;
+  right: 50px;
+  color: white;
+  font-size: 2rem;
+  top: 50px;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  cursor: pointer;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+#myfnav .hide {
+  opacity: 0;
+  pointer-events: none;
+}
+
+#myfnav #mobile-nav {
+  position: absolute;
+  display: none;
+  background: black;
+  height: 0;
+  overflow: hidden;
+}
+
+#myfnav #mobile-nav ul li {
+  padding: 5px 10px;
+  list-style: none;
+}
+
+#myfnav #mobile-nav ul li a {
+  color: #eeefff;
+  text-decoration: none;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+#myfnav #mobile-nav ul li a:hover {
+  color: #3498db;
+}
+
+#myfnav #com-nav {
+  position: absolute;
+  right: 50px;
+  line-height: 100px;
+}
+
+#myfnav #com-nav ul li {
+  position: relative;
+  display: inline-block;
+  padding: 0 17px;
+  font-size: 1.3rem;
+}
+
+#myfnav #com-nav ul li a {
+  position: relative;
+  color: #bdc3c7;
+  text-decoration: none;
+  font-family: "Quicksand", sans-serif;
+  padding: 7px 0;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+#myfnav #com-nav ul li a:hover {
+  color: white;
+}
+
+#myfnav #com-nav ul li a::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  background: white;
+  width: 0%;
+  height: 2px;
+  left: 50%;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+#myfnav #com-nav ul li a:hover::after {
+  width: 100%;
+  left: 0;
+}
+
+#home #banner {
+  margin-top: -100px;
+  height: 100vh;
+  overflow: hidden;
+}
+
+#home .title h1 {
+  position: absolute;
+  top: 30vh;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  white-space: nowrap;
+  font-size: 3.6rem;
+  font-family: "Rye", cursive;
+  font-weight: lighter;
+  display: block;
+}
+
+#home .title #typing {
+  background: white;
+  padding: 15px;
+  position: absolute;
+  top: 50vh;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  font-size: 2.5rem;
+  opacity: 0.8;
+}
+
+#home .title #typing .still-text {
+  white-space: nowrap;
+}
+
+#home .title #typing .typed-text {
+  color: #3498db;
+}
+
+#home .title #typing .typed-cursor {
+  color: #3498db;
+}
+
+.heading {
+  font-family: "Righteous", cursive;
+}
+
+#team {
+  margin-top: 100px;
+}
+
+#team .card {
+  cursor: pointer;
+}
+
+#contact .icon {
+  padding: 7px;
+  background: black;
+  color: white;
+}
+
+#contact #personal-profile {
+  -webkit-box-shadow: 0px 0px 25px 10px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 0px 25px 10px rgba(0, 0, 0, 0.2);
+  padding: 5px;
+}
+
+#contact #personal-profile h4 {
+  font-family: "Comfortaa", cursive;
+}
+
+footer {
+  margin-top: 20px;
+}
+
+footer .icon-foot {
+  color: white;
+  border-radius: 50%;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+footer #fbic:hover {
+  color: #3b5998;
+}
+
+footer #twic:hover {
+  color: #00acee;
+}
+
+footer #gplusic:hover {
+  color: #db4a39;
+}
+
+footer #liic:hover {
+  color: #0e76a8;
+}
+
+footer #insic:hover {
+  color: #e1306c;
+}
+
+footer #pinic:hover {
+  color: #e60023;
+}
+
+footer .footer-link {
+  -webkit-transition: 0.3;
+  transition: 0.3;
+}
+
+footer .footer-link:hover {
+  text-decoration: none;
+}
+
+@media (max-width: 920px) {
+  #myfnav #com-nav {
+    right: 20px;
+  }
+}
+
+@media (max-width: 880px) {
+  #myfnav #com-nav {
+    display: none;
+  }
+  #myfnav #mobile-nav {
+    position: absolute;
+    display: inline-block;
+    top: 100px;
+    right: 50px;
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+  }
+  #myfnav .show,
+  #myfnav .hide {
+    display: block;
+  }
+}
+/*# sourceMappingURL=style.css.map */
